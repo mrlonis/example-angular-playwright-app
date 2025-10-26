@@ -42,6 +42,18 @@ CREATE example-angular-playwright-app/.windsurf/rules/guidelines.md (1936 bytes)
     Successfully initialized git.
 ```
 
+## Table of Contents
+
+- [ExampleAngularPlaywrightApp](#exampleangularplaywrightapp)
+  - [Table of Contents](#table-of-contents)
+  - [Development server](#development-server)
+  - [Code scaffolding](#code-scaffolding)
+  - [Building](#building)
+  - [Running unit tests](#running-unit-tests)
+  - [Running end-to-end tests](#running-end-to-end-tests)
+    - [Setting up Playwright for E2E Testing](#setting-up-playwright-for-e2e-testing)
+  - [Additional Resources](#additional-resources)
+
 ## Development server
 
 To start a local development server, run:
@@ -93,6 +105,44 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+### Setting up Playwright for E2E Testing
+
+```shell
+➜  example-angular-playwright-app git:(main) ✗ npm run ng -- e2e
+
+> example-angular-playwright-app@0.0.0 ng
+> ng e2e
+
+Cannot find "e2e" target for the specified project.
+You can add a package that implements these capabilities.
+
+For example:
+  Playwright: ng add playwright-ng-schematics
+  Cypress: ng add @cypress/schematic
+  Nightwatch: ng add @nightwatch/schematics
+  WebdriverIO: ng add @wdio/schematics
+  Puppeteer: ng add @puppeteer/ng-schematics
+
+Would you like to add a package with "e2e" capabilities now? Playwright
+✔ Determining Package Manager
+  › Using package manager: npm
+✔ Searching for compatible package version
+  › Found compatible package version: playwright-ng-schematics@2.1.1.
+✔ Loading package information from registry
+✔ Confirming installation
+✔ Installing package
+✔ Install Playwright browsers (can be done manually via 'npx playwright install')? Yes
+    Adding @playwright/test 1.56.1
+CREATE playwright.config.ts (1933 bytes)
+CREATE e2e/example.spec.ts (208 bytes)
+CREATE e2e/tsconfig.json (64 bytes)
+UPDATE angular.json (3074 bytes)
+UPDATE package.json (1250 bytes)
+UPDATE .gitignore (673 bytes)
+✔ Packages installed successfully.
+    Installing browsers...
+```
 
 ## Additional Resources
 
