@@ -13,8 +13,8 @@
     "watch": "ng build --watch --configuration development"
   },
   "prettier": {
-    "singleQuote": true,
     "printWidth": 100,
+    "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "all",
     "overrides": [
