@@ -54,6 +54,7 @@ CREATE example-angular-playwright-app/.windsurf/rules/guidelines.md (1936 bytes)
     - [Setting up Playwright for E2E Testing](#setting-up-playwright-for-e2e-testing)
   - [Running Linting via ESLint](#running-linting-via-eslint)
     - [Setting up ESLint](#setting-up-eslint)
+  - [Setting up @angular/material](#setting-up-angularmaterial)
   - [Additional Resources](#additional-resources)
 
 ## Development server
@@ -186,6 +187,30 @@ CREATE eslint.config.js (969 bytes)
 UPDATE package.json (1365 bytes)
 UPDATE angular.json (3359 bytes)
 ✔ Packages installed successfully.
+```
+
+## Setting up @angular/material
+
+Below is the terminal output when adding Angular Material to the Angular project via `npm run ng -- add @angular/material`:
+
+```shell
+➜  example-angular-playwright-app git:(main) npm run ng -- add @angular/material
+
+> example-angular-playwright-app@0.0.0 ng
+> ng add @angular/material
+
+✔ Determining Package Manager
+  › Using package manager: npm
+✔ Searching for compatible package version
+  › Found compatible package version: @angular/material@20.2.10.
+✔ Loading package information from registry
+✔ Confirming installation
+✔ Installing package
+✔ Select a pair of starter prebuilt color palettes for your Angular Material theme Azure/Blue         [Preview: https://material.angular.dev?theme=azure-blue]
+UPDATE package.json (1434 bytes)
+✔ Packages installed successfully.
+UPDATE src/styles.scss (1328 bytes)
+UPDATE src/index.html (513 bytes)
 ```
 
 ## Additional Resources
