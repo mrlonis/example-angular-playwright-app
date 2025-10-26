@@ -2,6 +2,46 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
 
+```shell
+➜  mrlonis ng new example-angular-playwright-app
+✔ Which stylesheet format would you like to use? Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+✔ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? No
+✔ Do you want to create a 'zoneless' application without zone.js? No
+✔ Which AI tools do you want to configure with Angular best practices? https://angular.dev/ai/develop-with-ai None, Claude         [ https://docs.anthropic.com/en/docs/claude-code/memory            ], Cursor         [
+https://docs.cursor.com/en/context/rules                         ], Gemini         [ https://ai.google.dev/gemini-api/docs                            ], GitHub Copilot [
+https://code.visualstudio.com/docs/copilot/copilot-customization ], JetBrains AI   [ https://www.jetbrains.com/help/junie/customize-guidelines.html   ], Windsurf       [
+https://docs.windsurf.com/windsurf/cascade/memories#rules        ]
+CREATE example-angular-playwright-app/README.md (1490 bytes)
+CREATE example-angular-playwright-app/.editorconfig (314 bytes)
+CREATE example-angular-playwright-app/.gitignore (604 bytes)
+CREATE example-angular-playwright-app/angular.json (2642 bytes)
+CREATE example-angular-playwright-app/package.json (1153 bytes)
+CREATE example-angular-playwright-app/tsconfig.json (992 bytes)
+CREATE example-angular-playwright-app/tsconfig.app.json (429 bytes)
+CREATE example-angular-playwright-app/tsconfig.spec.json (408 bytes)
+CREATE example-angular-playwright-app/.vscode/extensions.json (130 bytes)
+CREATE example-angular-playwright-app/.vscode/launch.json (470 bytes)
+CREATE example-angular-playwright-app/.vscode/tasks.json (938 bytes)
+CREATE example-angular-playwright-app/src/main.ts (222 bytes)
+CREATE example-angular-playwright-app/src/index.html (313 bytes)
+CREATE example-angular-playwright-app/src/styles.scss (80 bytes)
+CREATE example-angular-playwright-app/src/app/app.scss (0 bytes)
+CREATE example-angular-playwright-app/src/app/app.spec.ts (688 bytes)
+CREATE example-angular-playwright-app/src/app/app.ts (313 bytes)
+CREATE example-angular-playwright-app/src/app/app.html (20122 bytes)
+CREATE example-angular-playwright-app/src/app/app.config.ts (400 bytes)
+CREATE example-angular-playwright-app/src/app/app.routes.ts (77 bytes)
+CREATE example-angular-playwright-app/public/favicon.ico (15086 bytes)
+CREATE example-angular-playwright-app/.claude/CLAUDE.md (1936 bytes)
+CREATE example-angular-playwright-app/.cursor/rules/cursor.mdc (1989 bytes)
+CREATE example-angular-playwright-app/.gemini/GEMINI.md (1936 bytes)
+CREATE example-angular-playwright-app/.github/copilot-instructions.md (1936 bytes)
+CREATE example-angular-playwright-app/.junie/guidelines.md (1936 bytes)
+CREATE example-angular-playwright-app/.windsurf/rules/guidelines.md (1936 bytes)
+✔ Packages installed successfully.
+    Successfully initialized git.
+```
+
 ## Development server
 
 To start a local development server, run:
