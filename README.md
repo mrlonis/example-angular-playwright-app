@@ -52,6 +52,8 @@ CREATE example-angular-playwright-app/.windsurf/rules/guidelines.md (1936 bytes)
   - [Running unit tests](#running-unit-tests)
   - [Running end-to-end tests](#running-end-to-end-tests)
     - [Setting up Playwright for E2E Testing](#setting-up-playwright-for-e2e-testing)
+  - [Running Linting via ESLint](#running-linting-via-eslint)
+    - [Setting up ESLint](#setting-up-eslint)
   - [Additional Resources](#additional-resources)
 
 ## Development server
@@ -108,6 +110,8 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 ### Setting up Playwright for E2E Testing
 
+Below is the terminal output when adding Playwright to the Angular project via `npm run ng -- e2e`:
+
 ```shell
 ➜  example-angular-playwright-app git:(main) ✗ npm run ng -- e2e
 
@@ -142,6 +146,46 @@ UPDATE package.json (1250 bytes)
 UPDATE .gitignore (673 bytes)
 ✔ Packages installed successfully.
     Installing browsers...
+```
+
+## Running Linting via ESLint
+
+To run linting on your project using ESLint, execute the following command:
+
+```bash
+ng lint
+```
+
+### Setting up ESLint
+
+Below is the terminal output when adding ESLint to the Angular project via `npm run ng -- add angular-eslint`:
+
+```shell
+➜  example-angular-playwright-app git:(main) npm run ng -- add angular-eslint
+
+> example-angular-playwright-app@0.0.0 ng
+> ng add angular-eslint
+
+✔ Determining Package Manager
+  › Using package manager: npm
+✔ Searching for compatible package version
+  › Found compatible package version: angular-eslint@20.4.0.
+✔ Loading package information from registry
+✔ Confirming installation
+✔ Installing package
+
+    All angular-eslint dependencies have been successfully installed 🎉
+
+    Please see https://github.com/angular-eslint/angular-eslint for how to add ESLint configuration to your project.
+
+    We detected that you have a single project in your workspace and no existing linter wired up, so we are configuring ESLint for you automatically.
+
+    Please see https://github.com/angular-eslint/angular-eslint for more information.
+
+CREATE eslint.config.js (969 bytes)
+UPDATE package.json (1365 bytes)
+UPDATE angular.json (3359 bytes)
+✔ Packages installed successfully.
 ```
 
 ## Additional Resources

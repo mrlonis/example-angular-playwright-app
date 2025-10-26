@@ -102,11 +102,23 @@
               "devServerTarget": "example-angular-playwright-app:serve:production"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "f31a659e-512f-43ee-bd5d-9a80d1c85fe9"
+    "analytics": "f31a659e-512f-43ee-bd5d-9a80d1c85fe9",
+    "schematicCollections": [
+      "angular-eslint"
+    ]
   }
 }
