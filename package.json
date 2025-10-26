@@ -12,6 +12,14 @@
     "test": "ng test",
     "watch": "ng build --watch --configuration development"
   },
+  "lint-staged": {
+    "*.{css,html,js,jsx,json,md,scss,ts,tsx,yaml,yml}": [
+      "prettier --write"
+    ],
+    "src/**/*.{html,js,jsx,ts,tsx}": [
+      "ng-lint-staged lint --fix --"
+    ]
+  },
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
